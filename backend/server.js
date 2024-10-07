@@ -6,12 +6,13 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect()
+mongoose.connect(' ') // database connection
 
 app.post('/add', (req, res => {
     const task = req.body.task;
 
 }))
+
 app.listen(3001, () => {
     console.log("Server is Runnig")
 })
